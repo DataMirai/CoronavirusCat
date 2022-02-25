@@ -1,6 +1,3 @@
-rsconnect::setAccountInfo(name='mireia-camacho',
-                          token='7BE4CFADE2C76C06D02E314D399F5F17',
-                          secret='46bgAXawNhYKR//CPEP1OX6Bp026G6RKIc4B7S+k')
 
 library(tidyverse)
 library(RSocrata)
@@ -78,10 +75,7 @@ vacunes_cat3$comarca <- "CATALUNYA"
 vacunes_agr3 <- rbind(vacunes_agr3, vacunes_cat3)
 
 ### Header ----
-header <- shinydashboard::dashboardHeader(title = "Covid Catalunya",
-                                          tags$li(class="dropdown", tags$a(href= "https://twitter.com/mireiacamacho75", icon("twitter"), target="_blank")),
-                                          tags$li(class="dropdown", tags$a(href= "https://www.linkedin.com/in/mireia-camacho-695475143/", icon("linkedin"),target="_blank")),
-                                          tags$li(class="dropdown", tags$a(href= "https://www.paypal.com/paypalme/mireiacamacho", icon("paypal"), target="_blank")))
+header <- shinydashboard::dashboardHeader(title = "Covid Catalunya")
 
 sidebar <- dashboardSidebar(
   sidebarMenu(
